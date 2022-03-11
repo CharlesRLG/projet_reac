@@ -3,7 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 import ProductList from './components/productslist.js'
 import Cart from './components/cart.js'
-
+import FooterPerso from './components/footerPerso.js'
 
 function App() {
   return (
@@ -14,7 +14,9 @@ function App() {
         < ProductList />
         < Cart />
       </header>
+      < FooterPerso />
     </div>
   )
 }
 export default App
+
