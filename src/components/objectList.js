@@ -11,7 +11,8 @@ let objectsList = [
 {name : "CV1",description : "Curriculum 1",price : "5€",image : cv1},
 {name : "CV2",description : "Curriculum 2",price : "17€",image : cv2},
 {name : "CV3",description : "Curriculum 3",price : "3827€",image : cv3},
-]               
+]       
+
 
 export default function objectListFunc() {
   return (
@@ -19,13 +20,11 @@ export default function objectListFunc() {
       {objectsList.map(({name, description, price, image})=>(
       <ul>
           <li>{name}</li> 
-          <img src={image} class="imageCv"/>
-          <li>{description}</li> 
+          <a href={description}><img src={image} class="imageCv"/></a>
+          {/* <li>{alert(description)}</li> */}
           <li>{price}</li>
       </ul>
     ))}
     </ul>
   )
 }
-
-
