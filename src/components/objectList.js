@@ -10,22 +10,23 @@ let objectsList = [
 {name : "CV3",description : "Curriculum 3",price : "3827€",image : cv3},
 ]       
 
-
-  function handleClick() {
-    alert(objectsList.description);
-  }
-
-
-
+   
 
 export default function objectListFunc() {
+  function handleClick(alert){
+    alert(alert)
+  }
+
   return (
     <ul>
       {objectsList.map(({name, description, price, image})=>(
       <ul>
           <li>{name}</li> 
-          <a href={description} onClick={handleClick}><img src={image} class="imageCv"/></a>
-          {/* <li>{alert(description)}</li> */}
+            <img src={image} class="imageCv"/>
+            {/* <button onClick={handleClick(description)}>plop</button> */}
+            <button onClick={() => handleClick(description)}>description</button>
+
+          <li>{description}</li>
           <li>{price}</li>
       </ul>
     ))}
