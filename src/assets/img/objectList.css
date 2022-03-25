@@ -1,3 +1,22 @@
 .imageCv {
-    width: 150px;
+    width: 200px;
+}
+
+.pageTableauComplet {
+    display: flex;
+    background: #282c34;
+}
+
+.tableauComplet {
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25px;
+    padding: 10px 5px;
+    background: #595f6b;
+    color: white;
+}
+
+button {
+    min-width: 30px;
 }

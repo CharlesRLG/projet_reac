@@ -13,7 +13,7 @@ const PickerButton = styled.div`
   background-color: ${(props) => props.bgColor || "pink"};
   cursor: pointer;
 `;
-export default function App() {
+export default function app() {
   const [colorsList, setColorsList] = useState([
     "#FF6666",
     "#ffd166",
